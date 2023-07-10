@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+@keyframes changeBackgroundColor {
+  from {
+    background-color: rgba(255, 255, 255, 0); /* Start with a transparent background */
+  }
+  to {
+    background-color: rgba(255, 0, 0, 0.5); /* End with a semi-transparent red background */
+  }
+}
+
+/* Add the animation property to the .popup.show class */
+.popup.show {
+  animation: changeBackgroundColor 1s ease-in-out; /* Apply the animation with a duration of 1 second */
+}
+  </style>
+</head>
+<body>
+  <div class="popup">
+    <div class="popup-content">
+      <!-- Content of the popup -->
+    </div>
+  </div>
+  
+  <button onclick="showPopup()">Show Popup</button>
+
+<script>
+  function showPopup() {
+    var popup = document.querySelector('.popup');
+    popup.classList.add('show');}
+  </script>
+  
+</body>
+</html>

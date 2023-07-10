@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablet view</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+
+<style>
+      /* Import Google font - Poppins */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      :where(.container, form, .input-field, header) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+
+
+      form .input-field {
+        flex-direction: row;
+        background-color: black;
+        margin-top: 700px;
+        margin-left: 200px;
+      }
+
+
+
+
+      form .check {
+        margin-top: 25px;
+        width: 100%;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        padding: 9px 0;
+        cursor: pointer;
+        border-radius: 6px;
+        pointer-events: none;
+        background: #212122;
+        transition: all 0.2s ease;
+        text-decoration: none;
+      }
+
+      nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #ffffff;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+
+
+
+
+</style>
+
+<style>
+
+@font-face {
+        font-family: pop;
+        src: url(poppins/Poppins-SemiBold.otf);
+    }
+
+    .button{
+      width: 400px;
+      border-radius: 8px;
+      height: 85px;
+      font-family: pop;
+      background-color: rgb(226, 226, 226);
+      box-shadow: 3px 3px white;
+      margin-left: 280px;
+      margin-top: 510px;
+      font-weight: 900;
+      font-size: large;
+      letter-spacing: 1px;
+    }
+
+
+
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .navbar {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #000000;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar img {
+      height: 50px;
+      margin:10px 100px;
+      
+      
+    }
+
+
+
+    @media screen and (max-width: 600px) {
+        nav {
+          
+            align-items: center;
+            margin-right: 5px;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+
+        nav img{
+            height: 50px;
+            width: 60px;
+            margin-left: 0;
+            margin-bottom: 10px;
+          }
+        }
+
+        footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        
+        footer p{
+          display: flex;
+          color: #fff;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+          margin-top: 8px;
+        }
+
+        .failory-logo-image{
+
+          margin-bottom: 40px;
+          margin-left: 48%;
+
+        }
+
+        @font-face {
+          font-family: pop;
+          src: url(poppins/Poppins-SemiBold.otf);
+        }
+
+        .welcome{
+          color:#fff;
+          font-family: pop;
+          font-weight: 800;
+          font-size: 60px;
+          animation: popup 2s infinite;
+        }
+
+        @keyframes popup {
+          0% {
+          opacity: 0;
+          }
+          50% {
+          opacity: 1;
+          }
+          100% {
+          opacity: 0;
+          }
+        }
+        
+
+
+        @keyframes slide-in {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @keyframes slide-out {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -30%);
+            }
+        }
+
+        img {
+        border-width: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        max-width: 100%;
+        margin-right: 80%;
+        }
+
+        @media screen and (min-width: 768px){
+
+          .container{
+            margin-bottom: 200px;
+          }
+
+          .welcome{
+            font-size: 30px;
+          }
+
+
+  
+        }
+
+        @media screen and (min-width: 1199px)  {
+
+
+          #id{
+            color: aqua;
+          }
+
+        }
+
+
+        @media screen and (max-height: 600px)  {
+
+
+
+          .button{
+            margin-top: 280px;
+          }
+
+          .topLeftItem{
+            padding-top: 150px;
+          }
+
+        }
+
+
+        @media screen and (max-width: 790px){
+
+        .container{
+          margin-bottom: 200px;
+        }
+
+        .welcome{
+          font-size: 30px;
+        }
+
+        .navbar img {
+        height: 50px;
+        margin:10px 40px;
+      
+      
+        }
+
+        footer p{
+          padding-bottom: 30px;
+        }
+
+        .button{
+        width: 300px;
+        border-radius: 8px;
+        height: 85px;
+        font-family: pop;
+        background-color: rgb(226, 226, 226);
+        box-shadow: 3px 3px white;
+        margin-left: 0;
+        margin-top: 510px;
+        font-weight: 400;
+        font-size: large;
+      }
+
+      .topLeftItem {
+  
+          top: 10;
+          left: 0;
+          margin-left: 15px;
+          margin-top: 0;
+          margin-bottom: 1005px;
+          margin-top: 0;
+        }
+
+
+      }
+
+
+        .topLeftItem {
+          position: absolute;
+          top: 10;
+          left: 0;
+          margin-left: 15px;
+          margin-top: 0;
+          margin-bottom: 505px;
+        }
+
+
+
+        @media screen and (max-width: 450px) {
+
+          .welcome{
+            font-size: small;
+          }
+
+          .navbar img {
+            height: 40px;
+            margin:10px 0px;
+            padding: 0;
+            
+            }
+
+            .button{
+              width: 200px;
+              border-radius: 8px;
+              height: 75px;
+              font-family: pop;
+              background-color: rgb(226, 226, 226);
+              box-shadow: 2px 2px white;
+              margin-left: 0;
+              margin-top: 510px;
+              font-weight: 300;
+              font-size:small;
+            }
+
+          
+        }
+
+
+
+
+
+</style>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      
+      <img src="Hassan_Allam_Holding_Logo_1-removebg-preview.png" alt="Left Image" >
+      <img src="logo.png"  alt="Right Image">
+      <img src="Titan Logo.png" class="titan"  alt="">
+
+      
+    </div>
+    <br>
+
+    <h5 style="color: #fff;" class="topLeftItem" ><span style="color: #d8d8d8; display: none; font-size: large;"  id="name"> Name: Ahmed abo samra</span> </h5>
+    <br>
+    <h5 style="color: #fff; margin-bottom: 450px;" class="topLeftItem" ><span style="color: #d8d8d8; display: none; font-size: large;" id="id">ID: 8035</span> </h5>
+
+      <!-- <form action="#">
+        <div class="input-field">
+          <input type="password" id="password" />
+        </div>
+      </form> -->
+
+      <p class="welcome">Wellcome to EL-DABAA NPP project....</p>
+
+      <button class="button" id="submitButton" onclick="checkPassword()" style="display:none; font-family: pop ;"> تم التسليم<br> Delivered <br>
+       <span style="font-family: pop;">Доставленный</span> </button> 
+
+       <button class="button" id="submitButton1" onclick="checkPassword()" style="display:none; font-family: pop; background-color: rgb(226, 226, 226);"> مرفوض <br> unacceptable <br>
+        <span style="font-family: pop;">Отклоненный</span> </button> 
+
+
+        <button class="button" id="submitButton2" onclick="checkPassword()" style="display:none; font-family: pop; background-color: rgb(226, 226, 226);">تم التسليم مسبقا <br> Delivered <br>
+          <span style="font-family: pop;">Доставленный</span> </button> 
+
+
+      <footer>
+
+      <input type="password" id="password" maxlength="4" minlength="4" style="background:transparent; outline-color: transparent; outline-style: none;border-color: transparent;">
+
+      <p>@copyright to Vision.studio</p>
+
+
+    </footer>
+
+
+
+
+
+    <script>
+      // JavaScript code
+      let paragraph = document.querySelector(".welcome");
+      var passwordInput = document.getElementById("password");
+      let body = document.querySelector("body");
+  
+      passwordInput.addEventListener("input", function() {
+          var passwordValue = passwordInput.value;
+          paragraph.style.fontWeight = "bold";
+          paragraph.style.letterSpacing = "3px";
+
+  
+          if (passwordValue === "") {
+            document.getElementById("name").style.display = "none";
+            document.getElementById("id").style.display = "none";
+            submitButton.style.display = "none";
+            submitButton1.style.display = "none";
+              document.body.style.backgroundColor = "black";
+              paragraph.innerHTML = "Wellcome to EL-DABAA NPP project....";
+          } else if (passwordValue === "123") {
+              document.body.style.backgroundColor = "green";
+              paragraph.innerHTML = "مسموح<br> Valid <br> действительный...";
+              submitButton.style.display = "block";
+              submitButton1.style.display = "none";
+              document.getElementById("id").style.display = "inline";
+              document.getElementById("name").style.display = "inline";
+              document.getElementById("name").innerHTML="Name: omar yassen";
+              document.getElementById("id").innerHTML = "ID:  6666";
+              submitButton2.style.display = "none";
+              
+              
+
+              setTimeout(function() {
+            
+            }, 700); // Delay of 1000ms (1 second)
+   
+          }else if (passwordValue === "555") {
+              document.body.style.backgroundColor = "rgb(171, 202, 109)";
+              paragraph.innerHTML = "تم الاستلام مسبقا<br> already received <br> Уже получено...";
+              submitButton.style.display = "none";
+              submitButton1.style.display = "none";
+              document.getElementById("id").style.display = "inline";
+              document.getElementById("name").style.display = "inline";
+              document.getElementById("name").innerHTML="Name: Hassan allam";
+              document.getElementById("id").innerHTML = "ID:  9999";
+              submitButton2.style.display = "block";
+              
+
+              setTimeout(function() {
+            }, 700); // Delay of 1000ms (1 second)
+   
+          }
+          
+          else {
+              document.body.style.backgroundColor = "red";
+              paragraph.innerHTML = "مرفوض<br>unacceptable <br> Отклоненный";
+              body.style.transition = "background-color 1s";
+              submitButton1.style.display = "block";
+              submitButton.style.display = "none";
+              document.getElementById("name").style.display = "inline";
+              document.getElementById("id").style.display = "inline";
+              document.getElementById("name").innerHTML="Name: hendawy hassan";
+              document.getElementById("id").innerHTML = "ID: 4444";
+              submitButton2.style.display = "none";
+
+          }
+      });
+  </script>
+</body>
+</html>
